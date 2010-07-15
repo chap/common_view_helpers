@@ -107,6 +107,12 @@ module CommonViewHelpers
 
 			string.gsub(/(\\|<\/|\r\n|[\n\r"'])/) { js_escape_map[$1] }
 		end
+		
+		# Generates a URL and automatically adds http:// if not already there
+    # Useful alongside link() or when linking to user submitted addresses
+		def urlify(addr)
+		  (addr.blank? || addr.starts_with?('http')) ? addr : "http://#{addr}"
+		end
 
   end  
 end

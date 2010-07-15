@@ -36,6 +36,10 @@ A set of view helpers Gemini uses in all of our Rails applications.
   
   # Javascript friendly (escaped) string
   js_string(string)
+  
+  # Generates a URL and automatically adds http:// if not already there
+  # Useful alongside link() when linking to user submitted addresses
+	urlify(address)
 
 == Copyright & Licensing
 
