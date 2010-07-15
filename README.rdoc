@@ -1,6 +1,6 @@
 = Common View Helpers
 
-A set of view helpers Gemini uses in all of our Rails applications.
+A lightweight set of view helpers Gemini uses in all of our Rails applications.
 
 == Installation
 
@@ -39,7 +39,7 @@ A set of view helpers Gemini uses in all of our Rails applications.
   
   # Generates a URL and automatically adds http:// if not already there
   # Useful alongside link() when linking to user submitted addresses
-	urlify(address)
+  urlify(address)
 
 == Copyright & Licensing
 
