@@ -1,3 +1,1 @@
-require File.dirname(__FILE__) + '/../lib/common_view_helpers'
-
-ActionView::Base.send(:include, CommonViewHelpers::ViewHelpers)
+require File.expand_path('../lib/common_view_helpers', File.dirname(__FILE__))
