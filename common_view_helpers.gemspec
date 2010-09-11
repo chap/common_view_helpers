@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{common_view_helpers}
-  s.version = "0.3.0"
+  s.version = "0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Zeke Sikelianos", "Mauricio Gomes"]
-  s.date = %q{2010-07-30}
+  s.date = %q{2010-09-11}
   s.description = %q{Common view helpers used by Gemini in most of our applications}
   s.email = %q{admin@geminisbs.com}
   s.extra_rdoc_files = [
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "init.rb",
      "lib/common_view_helpers.rb",
+     "lib/common_view_helpers/common_view_helpers.rb",
      "rails/init.rb"
   ]
   s.homepage = %q{http://github.com/geminisbs/common_view_helpers}
