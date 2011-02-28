@@ -44,6 +44,9 @@ A lightweight set of view helpers Gemini uses in all of our Rails applications.
   # Breaks up a BigNum, FixNum or Float with commas
 	# e.g., 532566 => 532,566 and 79593255.66 => 79,593,255.66 
 	commify(num)
+	
+	# Converts a camelized string into snakecase (eg, SomeClass -> some_class)
+	snakeify(string)
 
 == Copyright & Licensing
 
