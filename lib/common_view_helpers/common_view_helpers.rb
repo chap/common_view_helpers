@@ -57,7 +57,7 @@ module CommonViewHelpers
           end
         end
       end
-      content_tag(:table, [thead, tbody].compact.join("\n"), options)
+      content_tag(:table, safe_join([thead, tbody].compact, "\n"), options)
     end
 
     # Pass in an ActiveRecord object, get back edit and delete links inside a TD tag
