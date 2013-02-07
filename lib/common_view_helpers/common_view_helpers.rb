@@ -17,7 +17,7 @@ module CommonViewHelpers
     def info_pair(label, value)
       value = content_tag(:span, "None", :class => "blank") if value.blank?
       label = content_tag(:span, "#{label}:", :class => "label")
-      content_tag(:span, [label, value].join(" "), :class => "info_pair")
+      content_tag(:span, safe_join([label, value]," "), :class => "info_pair")
     end
 
     # Give this helper an array, and get back a string of <li> elements.
