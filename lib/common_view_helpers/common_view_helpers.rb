@@ -34,7 +34,7 @@ module CommonViewHelpers
         css << "last" if items.last == item
         css << "even" if options[:stripe] && index%2 == 1
         css << "odd" if options[:stripe] && index%2 == 0 # (First item is odd (1))
-        out << content_tag(:li, item, :class => css.join(" "))
+        out << content_tag(:li, item, :class => safe_join(css, " "))
       end
       safe_join(out, "\n")
     end
