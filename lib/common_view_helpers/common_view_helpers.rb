@@ -36,7 +36,7 @@ module CommonViewHelpers
         css << "odd" if options[:stripe] && index%2 == 0 # (First item is odd (1))
         out << content_tag(:li, item, :class => css.join(" "))
       end
-      out.join("\n")
+      safe_join(out, "\n")
     end
 
     # Build an HTML table
